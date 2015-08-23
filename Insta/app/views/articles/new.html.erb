@@ -1,5 +1,9 @@
 <h2>Article</h2>
 
+<!-- The articles_path helper tells Rails to point the form
+to the URI Pattern associated with the articles prefix;
+and the form will (by default) send a POST request to that route. -->
+
 <%= form_for :article, url: articles_path do |f| %>
   <p>
     <%= f.label :title %><br>
